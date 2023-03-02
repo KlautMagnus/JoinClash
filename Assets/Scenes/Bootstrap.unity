@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 777889296}
   - component: {fileID: 777889295}
+  - component: {fileID: 777889297}
   m_Layer: 0
   m_Name: Initialization
   m_TagString: Untagged
@@ -152,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acd6fc7f9c314d1abc04e81eca45d8f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _stateMachine: {fileID: 11400000, guid: 601ce2bb50ef5ef49bf27a60356db749, type: 2}
+  _stateMachineFactory: {fileID: 777889297}
 --- !u!4 &777889296
 Transform:
   m_ObjectHideFlags: 0
@@ -168,3 +169,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &777889297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777889294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbec4fd0a33049a8bc32f565566eeafc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _level:
+    Name: Gym
+    LoadMode: 0
+  _menu:
+    Name: Menu
+    LoadMode: 1
